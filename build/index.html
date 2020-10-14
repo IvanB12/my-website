@@ -2,223 +2,65 @@
 <html lang='en'>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:title' content='Ivan Bozhko portfolio' />
+    <meta property='og:image'
+        content='https://firebasestorage.googleapis.com/v0/b/ivan-bozhko-portfolio.appspot.com/o/website.PNG?alt=media&token=b0f8a780-f2c4-48da-8a77-aaafdbb60fcf' />
+    <meta property='og:description' content='My personal website' />
+    <meta property='og:url' content='https://ivan-bozhko-portfolio.web.app' />
     <link rel='stylesheet' type='text/css' href='vendors/css/normalize.css'>
     <link rel='stylesheet' type='text/css' href='vendors/css/Grid.css'>
     <link rel='stylesheet' type='text/css' href='vendors/css/ionicons.min.css'>
+    <link href="vendors/css/hamburger.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='resources/css/style.css'>
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <title>My-portfolio</title>
+    <title>Ivan-Bozhko website</title>
 
 </head>
 
 <body>
 
-    <body>
-        <div id="root">
-            <div class="App">
-                <header id="header">
-                    <nav id="nav-wrap"><a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show
-                            navigation</a><a class="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
+    <div class="App">
+        <header id="header">
+            <nav id="nav-wrap">
+                <ul id="nav" class="nav">
+                    <!---hamburger-->
+                    <button class="hamburger hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner">
+                            </span>
+                        </span>
+                    </button>
+                    <ul id="mobile-menu" style="display: none">
+                        <li><a class="smoothscroll" href="#header">Home</a></li>
+                        <li><a class="smoothscroll" href="#about">About</a></li>
+                        <li> <a class="smoothscroll" href="#education-and-skills">Resume</a></li>
+                        <li> <a class="smoothscroll" href="#portfolio">Works</a></li>
+                        <li> <a class="smoothscroll" href="#footer" target="_blank">Contact</a></li>
+                    </ul>
+                    <!--hamburger--->
+                    <li><a class="smoothscroll" href="#header">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#education-and-skills">Resume</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+                    <li><a class="smoothscroll" href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="row banner">
+                <div class="banner-text">
+                    <h1 class="responsive-headline">Ivan Bozhko</h1>
+                    <h3>I’M A FRONT-END DEVELOPER LOOKING FOR A JOB AND EAGER TO ENHANCE MY SKILLS IN FRONT-END AND
+                        BACK-END DEVELOPMENT.</h3>
+                    <hr>
 
-                        <ul id="nav" class="nav">
-                            <li><a class="smoothscroll" href="#header">Home</a></li>
-                            <li><a class="smoothscroll" href="#about">About</a></li>
-                            <li><a class="smoothscroll" href="#education-and-skills">Resume</a></li>
-                            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-                            <li><a class="smoothscroll" href="#footer">Contact</a></li>
-                        </ul>
-
-
-                    </nav>
-                    <div class="row banner">
-                        <div class="banner-text">
-                            <h1 class="responsive-headline" style="font-size: 90px;">Ivan Bozhko</h1>
-                            <h3>I’m a front-end developer looking for a job and eager to develop my skills in front-end
-                                and back-end
-                                development.</h3>
-                            <hr>
-                            <ul class="social">
-                                <li><a href="https://www.facebook.com/profile.php?id=100005043856959"><i
-                                            class="fab fa-facebook-f icon"></i></a>
-                                </li>
-                                <li><a href="https://www.linkedin.com/in/ivan-bozhko-701b34a0/"><i
-                                            class="fab fa-linkedin-in icon"></i></a>
-                                </li>
-                                <li><a href="https://github.com/IvanB12"><i class="fab fa-github icon"></i></a></li>
-                                <li><a href="https://www.codewars.com/users/IvanB12"> <img class='img-icon icon'
-                                            alt="Weather radar" src="resources/img/icons/codewars-512.png">
-                                    </a></li>
-
-
-                                </a>
-                            </ul>
-                        </div>
-                    </div>
-                    <p class="scrolldown"><a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a></p>
-                </header>
-                <!----  First fixes-->
-                <section id="about">
-                    <div class="row">
-                        <div class="col span-4-of-12">
-                            <div class='picture-container'>
-                                <img class="profile-pic" src="./resources/img/photo for work 1 after resizing 2.jpg"
-                                    alt="Ivan Bozhko Profile Pic">
-                            </div>
-                        </div>
-                        <div class="col span-8-of-12">
-                            <h2>About Me</h2>
-                            <div>
-                                I've graduated not long time ago, and now I'm looking for opportunity to launch up my
-                                career.
-                                I'm looking for new opportunities in following fields: Web-development, QA.
-                                My knowledge is a combination of Bootcamp for web developers and online courses: Udemy,
-                                Coursera.
-                                Some of my skills: JavaScript(ES6), React, Node.js, CSS, HTML, Java.
-
-                            </div>
-                            <div class="columns contact-details">
-                                <h2>Contact Details</h2>
-                                <p class="address"><span>Ivan Bozhko</span><br><span>Ramat Gan,
-                                        Israel, </span><br><span>058 -
-                                        7751875</span><br><span>ivanbozhko1992@gmail.com</span></p>
-                            </div>
-                            <div class="columns download">
-                                <a href="https://drive.google.com/file/d/13t410yMAq_DxUYfj2ZI71AZnaAfcIWy8/view?usp=sharing"
-                                    class="button"><i class="fa fa-download"></i> Download Resume</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="education-and-skills">
-                    <div class="row education">
-                        <div class="three columns header-col ">
-                            <h1><span>Education</span></h1>
-                        </div>
-                        <div class="nine columns main-col">
-                            <div class="row item">
-                                <div class="twelve columns">
-                                    <div>
-                                        <h3>Freelance</h3>
-                                        <p class="info">Web-development <span>•</span><em class="date">
-                                                2020</em></p><br>
-                                        <p>Performed several projects on javascript and react, links to the deployed
-                                            projects: Weather Radar, Budget app;<br>
-                                            Deepened my knowledge in the theory of programming and how code works behind
-                                            the scenes;<br>
-
-                                            Took numerous courses on Web-development on Udemy in order to increase my
-                                            skills and knowledge;
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h3>ITC</h3>
-                                        <p class="info">Web-development<span>•</span><em class="date">August 2019</em>
-                                        </p>
-                                        <p>A unique training course designed to transform hand-picked young
-                                            professionals into qualified full-stack developers.<br> The program
-                                            is
-                                            a full time, three-month, hands-on accelerator, which encourages research
-                                            and self-led learning, as well as teamwork, all while incorporating
-                                            industry's best practices.<br>
-                                            The main technologies used during the course:
-                                            Design: HTML/ CSS, layouts, responsive design, cross browser
-                                            support. Interactivity: JavaScript (ES6,Jquery), React.js, Event-driven
-                                            programming, Ajax, GIT. Server Side: Python, Node.js, APIs.
-                                            DATA: Data
-                                            processing, SQL & noSQL. DEPLOYMENT:
-                                            Docker, Heroku, Firebase.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="row skill">
-                        <div class="three columns header-col">
-                            <h1><span>Skills</span></h1>
-                        </div>
-                        <div class="nine columns main-col">
-                            <div class="bars">
-                                <ul class="skills">
-                                    <li><span class="bar-expand react js" style="width: 90%;"></span> React Js
-                                    </li>
-                                    <li><span class="bar-expand node.js" style="width: 79%;"></span>Node.js
-                                    </li>
-                                    <li><span class="bar-expand java script" style="width: 95%;"></span>Java
-                                        script
-                                    </li>
-                                    <li><span class="bar-expand css" style="width: 95%;"></span>CSS
-                                    </li>
-                                    <li><span class="bar-expand sql" style="width: 80%;"></span>SQL
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-                <!------>
-                <section id="portfolio">
-                    <h1>Check Out Some of My Works</h1>
-                    <div class="row">
-                        <div class="col span-6-of-12" style="position: relative;">
-                            <div class="portfolio-item" style="position: absolute;">
-                                <div class="item-wrap"><a href="https://weather-app-3d49b.web.app/" target="_blank"><img
-                                            alt="Weather radar" src="resources/img/WeatherApp.PNG">
-
-                                    </a>
-
-                                </div>
-                                <div class="overlay">
-                                    <div class="portfolio-item-meta">
-                                        <h3>Weather Radar</h3>
-                                        <p>Weather radar is an application for checking weather in any part of the
-                                            world. Built on React, graphic style: flat</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button type="button" class="button button-projects-on" name='0' target="_blank">Show
-                                info</button>
-
-                        </div>
-                        <div class="col span-6-of-12" style="position: relative;">
-                            <div class="portfolio-item" style="position: absolute;">
-                                <div class="item-wrap">
-                                    <a href="https://budget-app-7ba15.web.app/" target="_blank"><img alt="Budget App"
-                                            src="resources/img/BudgetVidget.PNG">
-                                    </a>
-                                </div>
-                                <div class="overlay">
-                                    <div class="portfolio-item-meta">
-                                        <h3>Budget App</h3>
-                                        <p>Budget app is an application for tracking your expences and
-                                            incomes</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button type="button" class="button button-projects-on" name='1' target="_blank">Show info
-                            </button>
-                        </div>
-
-                    </div>
+                </div>
             </div>
-        </div>
-        </section>
-        <section id='footer'>
-            <ul class="contacts">
-                <li class="columns contact-details">
-                    <p class="address"><span class="my-name">Ivan Bozhko</span><br><span>Ramat Gan,
-                            Israel, </span><br><span>058 -
-                            7751875</span><br><span>ivanbozhko1992@gmail.com</span></p>
-                </li>
+
+            <ul class="row social">
                 <li><a href="https://www.facebook.com/profile.php?id=100005043856959"><i
                             class="fab fa-facebook-f icon"></i></a>
                 </li>
@@ -226,27 +68,199 @@
                             class="fab fa-linkedin-in icon"></i></a>
                 </li>
                 <li><a href="https://github.com/IvanB12"><i class="fab fa-github icon"></i></a></li>
-
-
+                <li><a href="https://www.codewars.com/users/IvanB12"> <img class='img-icon icon' alt="Weather radar"
+                            src="resources/img/icons/codewars-512.png">
+                    </a></li>
+                </a>
             </ul>
-
+        </header>
+        <!----  First fixes-->
+        <section id="about">
+            <div class="row">
+                <div class="col span-4-of-12">
+                    <div class='picture-container'>
+                        <img class="profile-pic" src="./resources/img/photo for work 1 after resizing 2.jpg"
+                            alt="Ivan Bozhko Profile Pic">
+                    </div>
+                </div>
+                <div class="col span-8-of-12">
+                    <div class='about-me'>
+                        <h2>About Me</h2>
+                        <div>
+                            Web developer. Sports enthusiast. Speaker of four languages. <br>
+                            I'm looking for an opportunity to launch my career. Being interested in new opportunities,
+                            I'm looking for a job in Web-development and QA. My knowledge and skills are a combination
+                            of Bootcamp for web developers and online courses: Udemy, Coursera. Some of my skills:
+                            JavaScript (ES6), React, Node.js, CSS/HTML, Java.
+                        </div>
+                    </div>
+                    <div class="columns contact-details">
+                        <h2>Contact Details</h2>
+                        <p class="address"><span>Ivan Bozhko</span><br><span>Ramat Gan,
+                                Israel, </span><br><span>058 -
+                                7751875</span><br><span>ivanbozhko1992@gmail.com</span></p>
+                    </div>
+                    <div class="columns download">
+                        <a href="https://drive.google.com/file/d/1oaXfrhZGzds6aIQd1Lk9fF3qMCymSIzD/view?usp=sharing"
+                            class="button"><i class="fa fa-download"></i> Download Resume</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        </div>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
-        <script src="code.js"></script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="/__/firebase/7.21.1/firebase-app.js"></script>
+        <section id="education-and-skills">
+            <div class="row education">
+                <div class="span-3-of-12 columns header-col ">
+                    <h1>Education</h1>
+                </div>
+                <div class="span-9-of-12 columns main-col">
+                    <div class="row item">
+                        <div class="columns">
+                            <div>
+                                <div class="info">
+                                    <h3 class="info-header">Freelance</h3>
+                                    <p> Web-development &mdash;
+                                        2020 </p>
+                                </div>
+                                <p>Performed several projects on javascript and react, all in my GitHub;<br>
+                                    Liblaries and frameworks, that I used:
+                                    jQuery, Lodash.js, React, Bootstrap;<br>
+                                    Deepened my knowledge in the theory of programming and how code works behind
+                                    the scenes;<br>
+                                    Took numerous courses on Web-development on Udemy in order to increase my
+                                    skills and knowledge;
+                                </p>
 
-        <!-- TODO: Add SDKs for Firebase products that you want to use
+                            </div>
+
+                            <div>
+                                <div class="info">
+                                    <h3 class="info-header">ITC</h3>
+                                    <p>Web-development &mdash; 2019 </p>
+                                </div>
+                                <p>A unique bootcamp designed to transform in a very short time young
+                                    students into qualified full-stack developers.<br> The program
+                                    is
+                                    a full time, three-month. Speed and pressure encourages research
+                                    and self-led learning, as well as teamwork, all while incorporating
+                                    industry's best practices.<br>
+                                    The main technologies used during the course:<br> Design:
+                                    HTML/CSS, layouts,
+                                    responsive
+                                    design, cross browser support. <br> Interactivity:
+                                    JavaScript/Jquery,
+                                    React.js<br>
+                                    Event-driven programming, Ajax, GIT.<br> Server Side: Python,
+                                    APIs,
+                                    Web framework
+                                    Authorization.<br> DATA: Data processing, SQL &
+                                    noSQL.<br> CLOUD: Deployment,
+                                    Docker,
+                                    Heroku.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row skill">
+                <div class="span-3-of-12 columns header-col">
+                    <h1>Skills</h1>
+                </div>
+                <div class="span-9-of-12 columns main-col">
+                    <div class="bars">
+                        <ul class="skills">
+                            <li><span class="bar-expand java script" style="width: 95%;"></span>Java
+                                script
+                            </li>
+                            <li><span class="bar-expand react js" style="width: 90%;"></span> React Js
+                            </li>
+                            <li><span class="bar-expand node.js" style="width: 79%;"></span>Node.js
+                            </li>
+                            <li><span class="bar-expand css" style="width: 95%;"></span>CSS
+                            </li>
+                            <li><span class="bar-expand sql" style="width: 80%;"></span>SQL
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------>
+        <section id="portfolio">
+            <h1>Check Out Some of My Works</h1>
+            <div class="row">
+                <div class="col span-6-of-12" style="position: relative;">
+                    <div class="portfolio-item" style="position: absolute;">
+                        <div class="item-wrap"><a href="https://weather-app-3d49b.web.app/" target="_blank"><img
+                                    alt="Weather radar" src="resources/img/WeatherApp.PNG">
+                            </a>
+                        </div>
+                        <div class="overlay">
+                            <div class="portfolio-item-meta">
+                                <h3>Weather Radar</h3>
+                                <p>Weather radar is an application for checking weather in any part of the
+                                    world. Built on React, graphic style: flat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="button button-projects-on" name='0' target="_blank">Show info
+                    </button>
+                </div>
+                <div class="col span-6-of-12" style="position: relative;">
+                    <div class="portfolio-item" style="position: absolute;">
+                        <div class="item-wrap">
+                            <a href="https://budget-app-7ba15.web.app/" target="_blank"><img alt="Budget App"
+                                    src="resources/img/BudgetVidget.PNG">
+                            </a>
+                        </div>
+                        <div class="overlay">
+                            <div class="portfolio-item-meta">
+                                <h3>Budget App</h3>
+                                <p>Budget app is an application for tracking your expences and
+                                    incomes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="button button-projects-on" name='1' target="_blank">Show
+                        info</button>
+                </div>
+
+            </div>
+        </section>
+        <section id='footer'>
+            <div class='row'>
+                <li class="columns contact-details-footer">
+                    <p class="address"><span class="my-name">Ivan Bozhko</span><br><span>Ramat Gan,
+                            Israel, </span><br><span>058 -
+                            7751875</span><br><span>ivanbozhko1992@gmail.com</span></p>
+                </li>
+                <ul class="social-links-footer">
+
+                    <li><a href="https://www.facebook.com/profile.php?id=100005043856959"><i
+                                class="fab fa-facebook-f icon"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/ivan-bozhko-701b34a0/"><i
+                                class="fab fa-linkedin-in icon"></i></a>
+                    </li>
+                    <li><a href="https://github.com/IvanB12"><i class="fab fa-github icon"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="code.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!--<script src="/__/firebase/7.21.1/firebase-app.js"></script> -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="/__/firebase/7.21.1/firebase-analytics.js"></script>
+    <!--<script src="/__/firebase/7.21.1/firebase-analytics.js"></script>-->
 
-        <!-- Initialize Firebase -->
-        <script src="/__/firebase/init.js"></script>
-    </body>
-
+    <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script>-->
 </body>
 
 </html>
